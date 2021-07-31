@@ -27,10 +27,13 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "http": "*",
     "jest": "^27.0.6",
     "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.12",
     "pg": "^8.7.1",
     "sequelize": "^6.6.5",
+    "socket.io": "^4.1.3",
     "sqlite3": "^5.0.2",
     "supertest": "^6.1.4"
   }

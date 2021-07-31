@@ -4,12 +4,17 @@ const express = require('express');
 const base64 = require('base-64');
 const cors = require('cors');
 
+
+
 const { todos, users, db } = require('./lib/models/index.js');
 
 
+
 const app = express();
+
 app.use(express.json());
 app.use(cors);
+
 
 app.get('/todos', async (req, res) => {
   let rows = await todos.findAll();
@@ -27,6 +32,7 @@ app.put('/todos/:id', (req, res) => {
 app.delete('./todos/:id', (req, res) => {
 
 });
+
 
 app.post('/signup', async (req, res) => {
     let {username, password} = req.body;
